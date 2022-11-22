@@ -5,5 +5,5 @@ class AppDimensions {
   static const verticalPaddingNavBarElements = 16.0;
   static const socialIconSize = 64.0;
   static const marginBetweenSocialLinks = 16.0;
-  static const awardsLogoSize = 200.0;
+  static const awardsLogoSize = 150.0;
 }

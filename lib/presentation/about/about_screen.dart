@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:web_profile/presentation/about/widgets/nav_bar.dart';
 import 'package:web_profile/presentation/about/widgets/person_image.dart';
 import 'package:web_profile/presentation/about/widgets/personal_information_card.dart';
-import 'package:web_profile/presentation/widgets/awards.dart';
 import 'package:web_profile/res/app_colors.dart';
 
 class AboutScreen extends StatelessWidget {
@@ -20,12 +19,11 @@ class AboutScreen extends StatelessWidget {
                 flex: 2,
                 child: Row(
                   children: const [
-                    NavBar(),
-                    PersonalInformationCard(),
+                    Expanded(flex: 1, child: NavBar()),
+                    Expanded(flex: 4, child: PersonalInformationCard()),
                   ],
                 ),
               ),
-              const Flexible(flex: 1, child: Awards()),
             ],
           ),
           const Positioned(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:web_profile/presentation/widgets/awards.dart';
 import 'package:web_profile/res/app_assets.dart';
 import 'package:web_profile/res/app_colors.dart';
 import 'package:web_profile/res/app_dimensions.dart';
@@ -10,31 +11,36 @@ class PersonalInformationCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      flex: 4,
-      child: Container(
-        decoration: BoxDecoration(
-          gradient: RadialGradient(
-            center: Alignment.topLeft,
-            radius: 1.5,
-            colors: [
-              AppColors.aboutStartGradient,
-              AppColors.aboutEndGradient,
-            ],
+    return Column(
+      children: [
+        Expanded(
+          flex: 2,
+          child: Container(
+            decoration: BoxDecoration(
+              gradient: RadialGradient(
+                center: Alignment.topLeft,
+                radius: 1.5,
+                colors: [
+                  AppColors.aboutStartGradient,
+                  AppColors.aboutEndGradient,
+                ],
+              ),
+            ),
+            child: Container(
+              margin: const EdgeInsets.only(left: 200),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                  _PersonalInfo(),
+                  _SocialLinks(),
+                ],
+              ),
+            ),
           ),
         ),
-        child: Container(
-          margin: const EdgeInsets.only(left: 200),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
-              _PersonalInfo(),
-              _SocialLinks(),
-            ],
-          ),
-        ),
-      ),
+        const Expanded(flex: 1, child: Awards()),
+      ],
     );
   }
 }

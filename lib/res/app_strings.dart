@@ -1,7 +1,7 @@
 class AppStrings {
   static const name = 'Anton K.';
-  static const home = 'Home';
   static const about = 'About';
+  static const skillsAndExperience = 'Skills';
   static const myWork = 'My Work';
   static const testimonials = 'Testimonials';
   static const contact = 'Contact';

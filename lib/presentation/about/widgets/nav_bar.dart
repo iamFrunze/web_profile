@@ -16,21 +16,17 @@ class _NavBarState extends State<NavBar> {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      flex: 1,
-      child: Padding(
-        padding: const EdgeInsets.only(bottom: 74, top: 74),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: const [
-            FlutterLogo(size: AppDimensions.flutterLogoSize),
-            _NavBarElement(text: AppStrings.home),
-            _NavBarElement(text: AppStrings.about),
-            _NavBarElement(text: AppStrings.myWork),
-            _NavBarElement(text: AppStrings.testimonials),
-            _NavBarElement(text: AppStrings.contact),
-          ],
-        ),
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 74, top: 74),
+      child: Column(
+        children: const [
+          FlutterLogo(size: AppDimensions.flutterLogoSize),
+          _NavBarElement(text: AppStrings.about),
+          _NavBarElement(text: AppStrings.skillsAndExperience),
+          _NavBarElement(text: AppStrings.myWork),
+          _NavBarElement(text: AppStrings.testimonials),
+          _NavBarElement(text: AppStrings.contact),
+        ],
       ),
     );
   }
@@ -54,6 +50,7 @@ class _NavBarElementState extends State<_NavBarElement> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: const EdgeInsets.only(top: 32),
       decoration: isHover
           ? BoxDecoration(
               borderRadius: const BorderRadius.all(

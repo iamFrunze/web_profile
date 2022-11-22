@@ -9,27 +9,24 @@ class Awards extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(left: 250),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.baseline,
-        textBaseline: TextBaseline.alphabetic,
-        children: const [
-          _Award(
-            text: AppStrings.arcticCodeDesc,
-            imagePath: AppAssets.awardArcticCode,
-          ),
-          _Award(
-            text: AppStrings.pullSharkDesc,
-            imagePath: AppAssets.awardShark,
-          ),
-          _Award(
-            text: AppStrings.patented,
-            imagePath: AppAssets.patent,
-          ),
-        ],
-      ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.baseline,
+      textBaseline: TextBaseline.alphabetic,
+      children: const [
+        _Award(
+          text: AppStrings.arcticCodeDesc,
+          imagePath: AppAssets.awardArcticCode,
+        ),
+        _Award(
+          text: AppStrings.pullSharkDesc,
+          imagePath: AppAssets.awardShark,
+        ),
+        _Award(
+          text: AppStrings.patented,
+          imagePath: AppAssets.patent,
+        ),
+      ],
     );
   }
 }
@@ -47,7 +44,7 @@ class _Award extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(64),
+      margin: const EdgeInsets.symmetric(vertical: 64, horizontal: 32),
       child: Column(
         children: [
           Image(

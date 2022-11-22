@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web_profile/presentation/about/about_screen.dart';
 import 'package:web_profile/presentation/skills/skills_screen.dart';
 import 'package:web_profile/res/app_colors.dart';
 
@@ -8,6 +9,6 @@ class WebPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-        backgroundColor: AppColors.dmBackground, body: SkillsScreen());
+        backgroundColor: AppColors.dmBackground, body: AboutScreen());
   }
 }
