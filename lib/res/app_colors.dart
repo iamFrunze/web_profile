@@ -1,4 +1,4 @@
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
 class AppColors {
   static const dmBackground = Color(0xFF303030);
@@ -16,4 +16,11 @@ class AppColors {
 
   static const skillStartGradient = Color(0xff673AB7);
   static const skillEndGradient = Color(0xffEC407A);
+
+  static const emailContactContainer = Color(0xff424242);
+  static const activeTextFormField = Color(0xffEC407A);
+  static const inactiveTextFormField = Colors.white;
+
+  static const sendMessageBtn = Color(0xffEC407A);
+  static const workElement = Color(0xFF979797);
 }

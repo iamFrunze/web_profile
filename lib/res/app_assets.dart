@@ -17,4 +17,9 @@ class AppAssets {
   static const java = 'assets/svg/java_icon.svg';
   static const cpp = 'assets/svg/cpp_icon.svg';
   static const dart = 'assets/svg/dart_icon.svg';
+
+  static const devRev = 'assets/pictures/dev_rev.png';
+  static const sr = 'assets/pictures/sr.png';
+  static const zefire = 'assets/pictures/zefire.png';
+  static const fp = 'assets/pictures/fp.png';
 }

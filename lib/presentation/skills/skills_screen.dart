@@ -14,6 +14,7 @@ class SkillsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.dmBackground,
       body: Container(
         margin: const EdgeInsets.only(top: 64),
         child: Stack(

@@ -1,5 +1,6 @@
 class AppStrings {
   static const name = 'Anton K.';
+  static const flutterDev = 'Flutter Dev';
   static const about = 'About';
   static const skillsAndExperience = 'Skills';
   static const myWork = 'My Work';
@@ -43,4 +44,28 @@ class AppStrings {
   static const flutterCourseTitle = 'Surf';
   static const flutterCourseDesc = 'Skill Up';
   static const flutterCourseDate = 'august 2022 - november 2022';
+
+  static const contactMe = 'Contact\nMe.';
+  static const whatName = 'What is your name?';
+  static const whatEmail = 'What it your email';
+  static const message = 'Write your message here';
+  static const sendMessage = 'send message';
+  static const inTouch = 'In touch 24/7';
+
+  static const myWorks = 'My Works';
+  static const fpTitle = 'ФизПомощник';
+  static const fpDesc =
+      'Приложение для оценивания спортивных результатов. Просмотор новостей и подсчет баллов.';
+
+  static const srTitle = 'Simple Routing';
+  static const srDesc =
+      'Приложение-навигатор для водителей и транспортных компаний.';
+
+  static const zefireTitle = 'Zefire';
+  static const zefireDesc =
+      'Приложение для управление по Bluetooth-протоколу домашним камином.';
+
+  static const drTitle = 'DevReviewer';
+  static const drDesc =
+      'Приложение для отслеживания статитистики приложения, опубликованного в PlayMarket.';
 }
